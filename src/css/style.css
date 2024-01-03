@@ -14,8 +14,8 @@
 @import "./base/media.css";
 
 /* Règles de composition */
-@import "/src/css/layout/footer.css";
-@import "/src/css/layout/header.css";
+@import "./src/css/layout/footer.css";
+@import "./src/css/layout/header.css";
 @import "/src/css/layout/article.css";
 
 /* Composants */
@@ -24,5 +24,5 @@
 @import "/src/css/components/carrousel.css";
 
 /* Pages */
-@import "/src/css/page/index.css";
-@import "/src/css/page/contact.css";
+@import "./src/css/page/index.css";
+@import "./src/css/page/contact.css";

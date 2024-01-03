@@ -1,0 +1,12 @@
+
+.h1{
+color: rgba(234, 155, 1, 1);
+text-align: center;
+
+/* Titre du site */
+font-family: Baloo 2;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%; /* 36.4px */
+}
