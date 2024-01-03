@@ -1,0 +1,26 @@
+
+/* Polices de caractère */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+
+/* Libraries import */
+@import "./libraries/normalize.css";
+
+/* Utils import */
+@import "./utils/variables.css";
+
+/* Styles import */
+@import "./base/main.css";
+@import "./base/media.css";
+
+/* Règles de composition */
+@import "/src/css/layout/footer.css";
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/article.css";
+
+/* Composants */
+@import "/src/css/components/menu.css";
+@import "/src/css/components/card.css";
+@import "/src/css/components/carrousel.css";
+
+/* Pages */
