@@ -1,0 +1,60 @@
+.card {
+    margin-top: 250px;
+    position: relative;
+  }
+  
+  .card__img {
+    top: 0;
+    left: 0;
+    right: 0;
+    height:250px;
+    z-index: -1;
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .card__caption {
+      position: absolute;
+  top: auto; /* ou une valeur spécifique si vous voulez le positionner à une distance du haut */
+  right: 20px; 
+  padding: 20px; /* Espace intérieur sur tous les côtés */
+  z-index: 1;
+  line-height: 1.3;
+  border-radius: 10px;
+  background-color: rgba(32, 32, 32, 1);
+  height: 169px;
+  width: 350px;
+    
+  }
+  
+  
+  .card__title {
+    color: #FFF;
+    text-align: center;
+    font-family: Baloo 2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 17.6px */
+  }
+  
+  .card__title-link {
+    color: var(--dark--blue--text);
+    text-decoration: none;
+    display: block;
+  }
+  
+  .card__excerpt {
+    color: var(--dark--blue--text);
+    font-size: var(--body--card);
+    font-family: var(--font-sans-serif);
+    font-weight: lighter;
+     color:#FFFF;
+  }
+
+  .card__link{
+    font-size: var(--b-u-t-t-o-n);
+    font-family: var(--font-sans-serif);
+     color:#FFFF;
+  }

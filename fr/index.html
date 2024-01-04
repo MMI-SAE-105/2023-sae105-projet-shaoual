@@ -23,29 +23,77 @@
     <h2>Explorez nos articles récents !</h2>
 
 
-<!-- Fin du menu principal -->
+<!-- CARDS -->
+
+<article class="card">
+    <div class="card__img">
+        <img :src="card.picture" src="/public/img/arena_1.webp" alt="arene" class="card-image">
+    </div>
+    <div class="card__caption">
+        <h3 class="card__title" x-text="card.title">L’arène : Au-delà du jeu</h3>
+        <p class="card__excerpt" x-text="card.excerpt"> «Chaque arène raconte une histoire. Découvrez celle de Panem.»</p>
+        <a class="card__link uppercase" :href="card.link" href="/fr/article.html">LIRE LA SUITE</a>
+    </div>
+</article>
+
+
+<article class="card">
+<div class="card__img">
+<img  :src="card.picture" src="/public/img/katniss_1.webp" alt="Katniss" class="card-image">
+</div>
+<div class="card__caption">
+<h3 class="card__title" x-text="card.title">La flamme qui allume la révolte</h3>
+<p class="card__excerpt" x-text="card.excerpt">« La fille en feu qui a redéfini le destin. »</p>
+<a class="card__link uppercase" :href="card.link" href="/fr/article.html" >LIRE LA SUITE</a>
+</div>
+</article>
+
+
+<article class="card">
+    <div class="card__img">
+        <img :src="card.picture" src="/public/img/peeta_1.webp" alt="peeta" class="card-image">
+    </div>
+    <div class="card__caption">
+        <h3 class="card__title" x-text="card.title">Peeta : Loyauté en jeu</h3>
+        <p class="card__excerpt" x-text="card.excerpt">«Un cœur loyal dans un jeu de trahisons.»</p>
+        <a class="card__link uppercase" :href="card.link" href="/fr/article.html">LIRE LA SUITE</a>
+    </div>
+</article>
 
 
 
 
-<img class="" src="/public/img/arena_1.webp" alt="">
+<article class="card">
+    <div class="card__img">
+        <img :src="card.picture" src="/public/img/capitol_1.webp" alt="capitole" class="card-image">
+    </div>
+    <div class="card__caption">
+        <h3 class="card__title" x-text="card.title">Le Capitole : Fastes et
+        oppressions</h3>
+        <p class="card__excerpt" x-text="card.excerpt">«Le lustre du pouvoir cache souvent des ombres.»</p>
+        <a class="card__link uppercase" :href="card.link" href="/fr/article.html">LIRE LA SUITE</a>
+    </div>
+</article>
 
-<img class="" src="/public/img/katniss_1.webp" alt="">
-<img class="" src="/public/img/peeta_1.webp" alt="">
-<img class="" src="/public/img/capitol_1.webp" alt="">
-<img class="" src="/public/img/mentors_1.webp" alt="">
 
-</div> <!--FIN DIV A MODIFIER -->
+<article class="card">
+    <div class="card__img">
+        <img :src="card.picture" src="/public/img/mentors_1.webp" alt="mentors_1" class="card-image">
+    </div>
+    <div class="card__caption">
+        <h3 class="card__title" x-text="card.title">Mentors : Guides cachés
+        des jeux</h3>
+        <p class="card__excerpt" x-text="card.excerpt">«Derrière chaque tribut, un guide, une histoire.»</p>
+        <a class="card__link uppercase" :href="card.link" href="/fr/article.html">LIRE LA SUITE</a>
+    </div>
+</article>
 
-<h2>Le saviez-vous ?</h2>
-<p>Film VS Livre Dans le livre, Katniss et Gale sont décrits comme ayant la peau d’olive et des cheveux noirs. Cependant,
-dans le film, ils ont tous les deux la peau claire et des cheveux châtains.
+<!--FIN CARDS-->
 
-Dans le livre, Haymitch est décrit comme étant bedonnant avec des cheveux noirs bouclés et des yeux gris clair, mais
-dans le film, il est mince, avec des cheveux blonds lisses et des yeux bleus clairs.
 
-Le livre dit que Katniss est plus petite que la plupart des tribus, mais dans le film, elle est plus grande que la
-plupart d’entre eux, même certains des Carrières.</p>
+
+
+
 </body>
 
 </html>
