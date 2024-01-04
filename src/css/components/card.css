@@ -58,3 +58,7 @@
     font-family: var(--font-sans-serif);
      color:#FFFF;
   }
+
+  .body{
+    background-color:  rgba(0, 0, 0, 1);
+  }
