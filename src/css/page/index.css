@@ -11,3 +11,18 @@ font-weight: 600;
 line-height: 130%; /* 36.4px */
 }
 
+.heading__2 {
+
+ width: 324px;
+height: 61px;
+flex-shrink: 0;
+color: #FFF;
+
+/* Heading 2 */
+font-family: Baloo2, sans-serif;
+font-size: 16px;
+font-style: 16px;
+font-weight: 500;
+line-height: 110%; /* 17.6px */
+
+}
