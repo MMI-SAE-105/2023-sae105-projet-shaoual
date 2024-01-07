@@ -1,3 +1,8 @@
+.navigation-container {
+background-color: #333;
+color: #FFF;
+font-family: Baloo2, sans-serif;
+}
 
 .header {
 display: flex;
@@ -5,4 +10,7 @@ justify-content: space-between;
 align-items: center;
 padding: 1rem;
 }
+
+
+
 
