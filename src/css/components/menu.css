@@ -35,3 +35,81 @@ background-color: white;
 transition: all 0.3s ease-in-out;
 }
 
+.burger.active span:nth-child(1) {
+transform: translateY(0.5rem) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+
+.menu {
+display: none;
+flex-direction: column;
+padding: 1rem;
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+background-color: #333;
+z-index: 1000;
+}
+
+.menu a {
+color: white;
+padding: 0.5rem 0;
+text-decoration: none;
+font-size: 1rem;
+transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+color: #ddd;
+}
+
+/* Alpine.js transition */
+.menu[style] {
+display: none;
+}
+
+.menu[style*="display: none"] {
+display: flex;
+}
+
+@media (min-width: 768px) {
+.burger {
+display: none;
+}
+
+.menu {
+display: flex;
+position: static;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+.menu__list {
+  margin-top: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background:red;
+}
+
+
+.menu__item {
+  margin-top: 15%;
+}
+
+.menu__link {
+  color: #FFFF;
+  text-decoration: none;
+}
+.menu a {
+padding: 0 1rem;
+}
+}
