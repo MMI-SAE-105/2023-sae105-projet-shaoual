@@ -11,6 +11,26 @@ font-weight: 600;
 line-height: 130%; /* 36.4px */
 }
 
+
+
+/* DESCRIPTION PLAYLIST */
+
+.song-details p {
+  font-weight: normal;
+  color: #FFF;
+  margin: 0px; /* ou une autre valeur selon l'espacement désiré */
+  font-family: Baloo2, sans-serif; /* ou la police de votre choix */
+  font-size: 16px; /* ou la taille de votre choix */
+  padding:12px;
+  margin-top: 0;
+  pattind-top: 0;
+}
+
+.song-details p strong {
+  font-weight: bold; /* Rend le texte en gras */
+}
+
+
 .text{
 color: var(--black-site, #FFF);
 font-family: Baloo2, sans-serif;
