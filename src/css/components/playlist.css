@@ -1,1 +1,49 @@
 
+
+.playlist-container {
+  border-radius: 20px;
+  background-color: #333333;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.song-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* Assurez-vous que l'image couvre la zone sans être déformée */
+  border-radius: 30%; /* Arrondi pour l'image */
+  padding-top:0px;
+  marging-top:0;
+}
+
+.song.current {
+  display: flex;
+  align-items: center;
+}
+
+.song-info {
+  flex-grow: 1; /* Permet au texte de prendre l'espace disponible */
+  margin-left: 15px;
+}
+
+.song-timer {
+  /* Style pour la minuterie et les icônes de contrôle */
+}
+
+.song-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.song-list li {
+  padding: 5px 0; /* Espacement entre les chansons */
+  font-size: 14px;
+}
+
+/* Vous pouvez ajouter des styles pour les états hover ou active si nécessaire */
+.song-list li:hover {
+  color: #c0c0c0; /* Change la couleur au survol */
+}
