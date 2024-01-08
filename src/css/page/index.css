@@ -26,3 +26,25 @@ font-weight: 500;
 line-height: 110%; /* 17.6px */
 
 }
+
+.img_index {
+  max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
+  height: auto; /* Maintient le ratio d'aspect de l'image */
+  display: block; /* Élimine l'espace blanc en dessous de l'image */
+}
+
+.img__affiche {
+ display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+  height: 100vh; /* Hauteur complète de la fenêtre de visualisation */
+  width: 100vw; 
+
+}
+
+
+.img_affiche {
+  max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+  max-height: 100vh; /* Assure que l'image ne dépasse pas la hauteur de la fenêtre de visualisation */
+  object-fit: contain;
+}
