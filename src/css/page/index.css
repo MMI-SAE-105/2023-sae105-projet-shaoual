@@ -11,6 +11,16 @@ font-weight: 600;
 line-height: 130%; /* 36.4px */
 }
 
+.text{
+color: var(--black-site, #FFF);
+font-family: Baloo2, sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+padding:15px;
+}
+
 .heading__2 {
 padding: 15px; 
 color: #FFF;
@@ -53,3 +63,8 @@ line-height: 130%;
   object-fit: contain;
 }
 
+.img_artiste {
+ max-width: 100%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+  max-height: 100vh; /* Assure que l'image ne dépasse pas la hauteur de la fenêtre de visualisation */
+  object-fit: contain;
+}
