@@ -39,11 +39,19 @@
 }
 
 .song-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ajoute un espace entre l'image et le texte */
   padding: 5px 0; /* Espacement entre les chansons */
-  font-size: 14px;
 }
 
 /* Vous pouvez ajouter des styles pour les états hover ou active si nécessaire */
 .song-list li:hover {
   color: #c0c0c0; /* Change la couleur au survol */
+}
+
+.song-list .song-thumbnail {
+  width: 30px; /* ou la taille que vous préférez */
+  height: 30px; /* pour maintenir le ratio d'aspect */
+  border-radius: 30%; /* pour rendre l'image circulaire */
 }
