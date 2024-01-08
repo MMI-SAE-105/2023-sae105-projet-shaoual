@@ -29,7 +29,7 @@ line-height: 110%; /* 17.6px */
 .heading__1 {
 color: #FFF;
 font-family: Baloo2, sans-serif;
-padding: 15px;
+padding: 15px;  /* ajustement espaces marges*/
 font-size: 24px;
 font-style: normal;
 font-weight: 500;
