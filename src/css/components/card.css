@@ -18,7 +18,7 @@
       position: absolute;
   top: auto; /* ou une valeur spécifique si vous voulez le positionner à une distance du haut */
   right: 20px; 
-  padding: 20px; /* Espace intérieur sur tous les côtés */
+  padding: 10px; /* Espace intérieur sur tous les côtés */
   z-index: 1;
   line-height: 1.3;
   border-radius: 10px;
@@ -40,7 +40,7 @@
   }
   
   .card__title-link {
-    color: var(--dark--blue--text);
+    color: red;
     text-decoration: none;
     display: block;
   }
@@ -59,7 +59,18 @@
      color:#FFFF;
   }
 
-  .body{
+ .card {
+  position: relative; /* Si vous voulez positionner la légende absolument par rapport à la carte */
+  /* Ajouter des marges, etc., si nécessaire */
+}
+
+
+
+.card-image {
+  width: 100%; /* La classe appliquée directement à <img> doit aussi avoir une largeur de 100% */
+  height: auto;
+}
+  .body {
     background-color:  rgba(0, 0, 0, 1);
   }
   
