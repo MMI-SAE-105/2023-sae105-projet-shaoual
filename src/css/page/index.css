@@ -121,7 +121,7 @@ padding:15px;
 
 
 .film-link {
-    color: orange;
+color: var(--orange, #EA9B01);
     text-decoration: none; /* Removes underline from links */
 }
 
