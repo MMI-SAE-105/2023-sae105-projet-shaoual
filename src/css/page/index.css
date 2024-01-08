@@ -118,3 +118,13 @@ height: 218px;
 height: 211px;
 padding:15px;
 }
+
+
+.film-link {
+    color: orange;
+    text-decoration: none; /* Removes underline from links */
+}
+
+.film-link:hover {
+    text-decoration: underline; /* Adds underline on hover for better user experience */
+}
