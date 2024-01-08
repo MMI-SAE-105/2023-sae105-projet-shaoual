@@ -26,6 +26,15 @@ font-weight: 500;
 line-height: 110%; /* 17.6px */
 
 }
+.heading__1 {
+color: #FFF;
+font-family: Baloo2, sans-serif;
+padding: 15px;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%;
+}
 
 .img_index {
   max-width: 100%; /* Assure que l'image ne dépasse pas la largeur de son conteneur */
@@ -48,3 +57,4 @@ line-height: 110%; /* 17.6px */
   max-height: 100vh; /* Assure que l'image ne dépasse pas la hauteur de la fenêtre de visualisation */
   object-fit: contain;
 }
+
