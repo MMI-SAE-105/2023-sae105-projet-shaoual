@@ -1,0 +1,22 @@
+.contact-button {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient( to left, #FFD197, #D1913C); /* Dégradé approximatif basé sur votre description */
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px; /* Ajustez la taille du texte comme nécessaire */
+  font-weight: bold;
+  border-radius: 10px; /* Pour les coins arrondis */
+  text-transform: uppercase; /* Texte en majuscules */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner du relief */
+  transition: all 0.3s ease; /* Transition douce pour les interactions */
+  font-family: Baloo2, sans-serif;
+  float: right;
+   margin-right: 38px;
+}
+
+.contact-button:hover {
+  background: linear-gradient(to right, #E6B468, #C18C2E); /* Dégradé un peu plus foncé pour l'effet hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée pour l'effet hover */
+}

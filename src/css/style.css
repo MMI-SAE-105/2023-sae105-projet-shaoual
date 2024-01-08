@@ -23,6 +23,7 @@
 @import "/src/css/components/card.css";
 @import "/src/css/components/carrousel.css";
 @import "/src/css/components/playlist.css";
+@import "/src/css/components/btn.css";
 
 /* Pages */
 @import "/src/css/page/index.css";
