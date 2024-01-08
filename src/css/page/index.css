@@ -21,6 +21,19 @@ line-height: 130%;
 padding:15px;
 }
 
+.small_text {
+   color: var(--grey-text, #EAEAEA);
+font-family: Baloo2, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;  
+  text-align: right;
+  padding:14px;
+  margin-top:0;
+  padding-top:0;
+}
+
 .heading__2 {
 padding: 15px; 
 color: #FFF;
