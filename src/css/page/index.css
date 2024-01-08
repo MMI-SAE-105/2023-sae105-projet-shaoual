@@ -68,3 +68,14 @@ line-height: 130%;
   max-height: 100vh; /* Assure que l'image ne dépasse pas la hauteur de la fenêtre de visualisation */
   object-fit: contain;
 }
+.container__2 {
+    display: flex;
+  align-items: center; /* Alignement vertical des enfants */
+  background-color: #000; /* Couleur de fond du conteneur */
+  color: #fff; /* Couleur du texte */
+  padding: 20px; 
+}
+.katniss__D{
+    width: 144px;
+height: 218px;
+}
