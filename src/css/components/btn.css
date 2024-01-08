@@ -13,7 +13,8 @@
   transition: all 0.3s ease; /* Transition douce pour les interactions */
   font-family: Baloo2, sans-serif;
   float: right;
-   margin-right: 38px;
+  margin-right: 38px;
+  margin-top: 8px;
 }
 
 .contact-button:hover {
