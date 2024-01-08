@@ -22,6 +22,7 @@
 @import "/src/css/components/menu.css";
 @import "/src/css/components/card.css";
 @import "/src/css/components/carrousel.css";
+@import "/src/css/components/playlist.css";
 
 /* Pages */
 @import "/src/css/page/index.css";
