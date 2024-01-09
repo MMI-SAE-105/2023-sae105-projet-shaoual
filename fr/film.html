@@ -91,14 +91,68 @@ ainsi dans une bataille qui mettra non seulement sa vie en danger, mais aussi se
 <h2 class="heading__2">Personnages principaux</h2>
 
 <!--CARROUSSEL-->
+<div x-data="{ slideActuel: 1 }" class="galerie-hero">
+    <div class="conteneur-slider">
+        <button @click="slideActuel = slideActuel > 1 ? slideActuel - 1 : 2"
+            class="bouton-nav bouton-gauche">&lt;</button>
 
-<div></div>
-<div>
-    <button></button>
+        <!-- Première série d'images -->
+        <div class="ensemble-slides" x-show="slideActuel === 1">
+        
+                <div class="description">
+            <img src="/public/img/jennifer_lawrence.webp" alt="Jennifer Lawrence comme Katniss Everdeen" class="image-principale">
+                    <h3>Jennifer Lawrence</h3>
+                    <p>Katniss Everdeen</p>
+                </div>
+
+                <div class="description">
+            <img src="/public/img/Josh_Hutcherson.webp" alt="Josh Hutcherson comme Peeta Mellark"
+                class="image-principale">
+                <h3>Josh Hutcherson</h3>
+                <p>Peeta Mellark</p>
+                </div>
+
+                <div class="description">
+            <img src="/public/img/Liam_Hemsworth.webp" alt="Liam Hemsworth comme Gale Hawthorne"
+                class="image-principale">
+                <h3>Liam Hemsworth</h3>
+                <p>Gale Hawthorne</p>
+            </div>
+        </div>
+
+        <!-- Deuxième série d'images -->
+        <div class="ensemble-slides" x-show="slideActuel === 2">
+
+                <div class="description">
+            <img src="/public/img/Willow_Shields.webp" alt="Willow Shields comme Primrose Everdeen"
+                class="image-principale">
+                    <h3>Willow Shields</h3>
+                    <p>Primerose Everdeen</p>
+            </div>
+
+            <div class="description">
+            <img src="/public/img/Woody_Herrelson.webp" alt="Woody Harrelson comme Haymitch Abernathy"
+                class="image-principale">
+                <h3>Woody Herrelson</h3>
+                <p>Haymitch Abernathy</p>
+                </div>
+
+                <div class="description">
+            <img src="/public/img/Stanley_Tucci.webp" alt="Stanley Tucci comme Caesar Flickerman"
+                class="image-principale">
+                <h3>Stanley Tucci</h3>
+                <p>Caesar Flickerman</p>
+                </div>
+        </div>
+
+        <button @click="slideActuel = slideActuel < 2 ? slideActuel + 1 : 1"
+            class="bouton-nav bouton-droit">&gt;</button>
+    </div>
 </div>
-<div>
-<img src="" alt="">
-</div>
+
+
+
+
 <!--FIN CARROUSSEL-->
 
 

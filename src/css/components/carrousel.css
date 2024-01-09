@@ -56,3 +56,93 @@
     opacity: 1;
     border: 2px solid var(--black-site, #FFF);
 }
+
+
+
+/* carrousel dans la page film*/
+
+.galerie-hero {
+    position: relative;
+    max-width: 1378px; /* La largeur totale de votre galerie */
+    margin: auto;
+}
+
+.conteneur-slider {
+    position: relative;
+}
+
+.bouton-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.bouton-gauche {
+    left: 0;
+}
+
+.bouton-droit {
+    right: 0;
+}
+
+.ensemble-slides {
+    display: flex;
+    justify-content: space-around; /* Distribue les images uniformément */
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.image-principale {
+    display: block;
+    width: 95px; /* La largeur de chaque image */
+    height: 95px; /* La hauteur de chaque image */
+    border-radius: 50%; /* Les rend rondes */
+    object-fit: cover; /* Garantit que les images couvrent tout le cercle */
+}
+
+/* Cachez tous les ensembles de diapositives par défaut */
+.ensemble-slides[x-show="false"] {
+    display: none;
+}
+
+.texte-description {
+    color: white;
+    font-size: 1rem;
+}
+
+.role-description {
+    color: grey;
+    font-size: 0.9rem;
+}
+.description {
+    color: white;
+}
+
+.description h3 {
+   
+    margin: 0;
+    color: #FFFFFF; /* Couleur du titre */
+    font-family: Baloo2, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; 
+}
+
+.description p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--orange, #DE8500);
+    font-family: Baloo2, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+    
+}
