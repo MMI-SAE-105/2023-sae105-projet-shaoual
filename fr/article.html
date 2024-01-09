@@ -94,6 +94,29 @@ Mockingjay, le symbole vivant de la résistance.</p>
 
 
 <!--FAUT un carroussel d'images-->
+<div x-data="{ currentSlide: 1 }" class="gallery">
+    <div class="main-image">
+        <button @click="currentSlide = currentSlide > 1 ? currentSlide - 1 : 4" class="nav-button left">&lt;</button>
+
+        <img x-show="currentSlide === 1" src="/public/img/img_1_gallerie.webp" alt="Image 1" class="slide">
+        <img x-show="currentSlide === 2" src="/public/img/img_2_gallerie.webp" alt="Image 2" class="slide">
+        <img x-show="currentSlide === 3" src="/public/img/img_3_gallerie.webp" alt="Image 3" class="slide">
+        <img x-show="currentSlide === 4" src="/public/img/img_4_gallerie.webp" alt="Image 4" class="slide">
+
+        <button @click="currentSlide = currentSlide < 4 ? currentSlide + 1 : 1" class="nav-button right">&gt;</button>
+    </div>
+
+    <div class="thumbnails">
+        <img @click="currentSlide = 1" src="/public/img/img_1_gallerie.webp" :class="{ 'active': currentSlide === 1 }"
+            class="thumbnail" alt="Miniature Image 1">
+        <img @click="currentSlide = 2" src="/public/img/img_2_gallerie.webp" :class="{ 'active': currentSlide === 2 }"
+            class="thumbnail" alt="Miniature Image 2">
+        <img @click="currentSlide = 3" src="/public/img/img_3_gallerie.webp" :class="{ 'active': currentSlide === 3 }"
+            class="thumbnail" alt="Miniature Image 3">
+        <img @click="currentSlide = 4" src="/public/img/img_4_gallerie.webp" :class="{ 'active': currentSlide === 4 }"
+            class="thumbnail" alt="Miniature Image 4">
+    </div>
+</div>
 
 <!--FIN-->
 

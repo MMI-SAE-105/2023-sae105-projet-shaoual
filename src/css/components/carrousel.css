@@ -1,0 +1,58 @@
+.gallery {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+.main-image {
+    position: relative;
+    margin: 34px;
+    
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav-button.left {
+    left: 0;
+}
+
+.nav-button.right {
+    right: 0;
+    color: var(#585858);
+}
+
+.slide {
+    width: 100%;
+    display: block; /* initialement caché par x-show */
+    border: 2px solid var(--black-site, #FFF);
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 80px; /* Ajustez selon la taille de vos vignettes */
+    cursor: pointer;
+    opacity: 0.9;
+    border: 2px solid var(--black-site, #FFF);
+}
+
+.thumbnail.active {
+    opacity: 1;
+    border: 2px solid var(--black-site, #FFF);
+}
