@@ -1,0 +1,35 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 312px; /* Ajustez la largeur selon vos besoins */
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacement entre les champs */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px; /* Espacement entre le label et le champ de saisie */
+    color: #ffffff;
+      font-family: Baloo2, sans-serif;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px; /* Bordures arrondies */
+    background-color: var(--White-Text, #FFF);
+    color: var(--White-Text, #FFF);
+      font-family: Baloo2, sans-serif;
+}
+
+.form-group textarea {
+    height: 100px; /* Hauteur fixe pour le textarea */
+    resize: none; /* Empêche le redimensionnement */
+}
+

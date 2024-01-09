@@ -1,7 +1,7 @@
 .contact-button {
   display: inline-block;
-  padding: 10px 25px;
-  background: linear-gradient( to left, #FFD197, #D1913C); /* Dégradé approximatif basé sur votre description */
+  padding: 15px 10px;
+  background: var(--degrad-orange, linear-gradient(90deg, #CF8130 40%, #FFF 116%)); /* Dégradé approximatif basé sur votre description */
   color: #FFFFFF;
   text-align: center;
   font-size: 16px; /* Ajustez la taille du texte comme nécessaire */
@@ -14,7 +14,7 @@
   font-family: Baloo2, sans-serif;
   float: right;
   margin-right: 38px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .contact-button:hover {
