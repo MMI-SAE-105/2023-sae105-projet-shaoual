@@ -1,2 +1,12 @@
 
 
+.image-auteur {
+
+     display: block;
+    width: 95px; /* La largeur de chaque image */
+    height: 95px; /* La hauteur de chaque image */
+    border-radius: 50%; /* Les rend rondes */
+    object-fit: cover;
+    margin-left: auto; /* Centre l'image horizontalement */
+    margin-right: auto;
+}
