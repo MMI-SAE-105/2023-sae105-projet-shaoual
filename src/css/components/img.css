@@ -26,4 +26,8 @@
     width: 156px;
 height: 260px;
 flex-shrink: 0;
+margin: auto;
+ display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;
 }
