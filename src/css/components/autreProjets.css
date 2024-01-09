@@ -41,3 +41,17 @@ hr {
   background-color: #FFF;
   margin: 20px 0;
 }
+
+
+.project-title {
+    display: block; /* rend le lien semblable à un paragraphe */
+     color: var(--White-Text, #FFF);
+    font-family: Baloo2, sans-serif;
+    text-decoration: none; /* retire le soulignement des liens */
+    margin-bottom: 25px; /* espace après le titre du projet */
+}
+
+.project-prefix {
+    display: block; /* crée un bloc pour le préfixe, le plaçant sur sa propre ligne */
+    margin-bottom: 10px; /* espace entre "Projet :" et le titre du projet */
+}
