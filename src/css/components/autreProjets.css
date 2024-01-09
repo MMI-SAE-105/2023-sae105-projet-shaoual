@@ -1,0 +1,43 @@
+.project-list {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.project {
+  
+  color: var(--White-Text, #FFF);
+font-family: Baloo2, sans-serif;
+margin-right: 34px;
+
+
+}
+
+.project-number {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 34px;
+
+  
+}
+
+.project-name {
+  font-size: 28px;
+   margin-left: 170px;
+   text-align: left;
+}
+
+.project-title {
+  font-size: 16px;
+  margin-left: 170px;
+  padding:7px;
+  text-align: left;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #FFF;
+  margin: 20px 0;
+}
