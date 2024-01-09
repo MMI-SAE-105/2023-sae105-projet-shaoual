@@ -20,3 +20,10 @@
     text-align: center; /* Centre le texte horizontalement */
     padding: 14px; /* Ajoutez ou ajustez le padding selon vos besoins */
 }
+
+.img_livre{
+
+    width: 156px;
+height: 260px;
+flex-shrink: 0;
+}
