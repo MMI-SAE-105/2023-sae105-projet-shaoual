@@ -17,14 +17,14 @@
   .card__caption {
       position: absolute;
   top: auto; /* ou une valeur spécifique si vous voulez le positionner à une distance du haut */
-  right: 20px; 
+  right: 10px; 
   padding: 10px; /* Espace intérieur sur tous les côtés */
   z-index: 1;
   line-height: 1.3;
   border-radius: 10px;
   background-color: rgba(32, 32, 32, 1);
-  height: 169px;
-  width: 350px;
+  height: 159px;
+  width: 320px;
     
   }
   
@@ -32,7 +32,7 @@
   .card__title {
     color: #FFF;
     text-align: center;
-    font-family: Baloo 2;
+     font-family: Baloo2, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -40,28 +40,38 @@
   }
   
   .card__title-link {
-    color: red;
+    color: ;
     text-decoration: none;
     display: block;
+
   }
   
   .card__excerpt {
     color: var(--dark--blue--text);
     font-size: var(--body--card);
-    font-family: var(--font-sans-serif);
+     font-family: Baloo2, sans-serif;
     font-weight: lighter;
      color:#FFFF;
+    
   }
 
   .card__link{
     font-size: var(--b-u-t-t-o-n);
     font-family: var(--font-sans-serif);
      color:#FFFF;
+    font-family: Baloo2, sans-serif;
+     text-align: right;
+     margin-left: 170px;
+      text-decoration: none;
+    
+     
+     
   }
 
  .card {
   position: relative; /* Si vous voulez positionner la légende absolument par rapport à la carte */
   /* Ajouter des marges, etc., si nécessaire */
+   padding:10px;
 }
 
 
@@ -69,6 +79,7 @@
 .card-image {
   width: 100%; /* La classe appliquée directement à <img> doit aussi avoir une largeur de 100% */
   height: auto;
+  padding:10px;
 }
 
  
