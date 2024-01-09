@@ -31,3 +31,15 @@ margin: auto;
     justify-content: center; /* Centre horizontalement */
     align-items: center;
 }
+
+.img_affiche{
+    width: 189px;
+    height: 284px;
+    flex-shrink: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; 
+    
+
+}
