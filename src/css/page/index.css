@@ -113,3 +113,8 @@ color: var(--orange, #EA9B01);
 .film-link:hover {
     text-decoration: underline; /* Adds underline on hover for better user experience */
 }
+
+
+.container__1 {
+    
+}
