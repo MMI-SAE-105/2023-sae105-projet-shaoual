@@ -115,6 +115,41 @@ color: var(--orange, #EA9B01);
 }
 
 
-.container__1 {
-    
+.heading__5 {
+color: #FFFFFF;
+    text-align: right;
+    margin-bottom: 20px;
+
+}
+
+
+.container__7 {
+    margin-top:200px;
+     display: flex;
+  align-items: center; /* Alignement vertical des enfants */
+  background-color: #000; /* Couleur de fond du conteneur */
+  color: var(--black-site, #FFF); /* Couleur du texte */
+  padding: 0px; 
+
+}
+
+.katniss__S {
+  width: 195px;
+height: 276px;
+object-fit: cover; /* S'assure que l'image remplit bien le cadre */
+    margin-right: 20px;
+    justify-content: left; /* Centre horizontalement */
+    align-items: left; 
+    marging-top:auto;
+
+
+}
+
+.text_1 {
+    color: var(--black-site, #FFF);
+    width: 70%; /* Ajustez selon la largeur désirée pour le texte */
+    margin-right: 20px; /* Ajustez l'espace entre le texte et l'image */
+    order: 2; 
+    margin-left:0px;
+    font-family: Baloo2, sans-serif;
 }
