@@ -1,6 +1,7 @@
 .card {
-    margin-top: 250px;
+    margin-top: 200px;
     position: relative;
+    padding-top:0;
   }
   
   .card__img {
@@ -16,15 +17,15 @@
 
   .card__caption {
       position: absolute;
-  top: auto; /* ou une valeur spécifique si vous voulez le positionner à une distance du haut */
-  right: 10px; 
+  top: 220px; /* ou une valeur spécifique si vous voulez le positionner à une distance du haut */
+  right: 0px; 
   padding: 10px; /* Espace intérieur sur tous les côtés */
   z-index: 1;
   line-height: 1.3;
-  border-radius: 10px;
+  border-radius: 0px;
   background-color: rgba(32, 32, 32, 1);
   height: 159px;
-  width: 320px;
+  width: 310px;
     
   }
   
@@ -52,6 +53,7 @@
      font-family: Baloo2, sans-serif;
     font-weight: lighter;
      color:#FFFF;
+     text-align: center;
     
   }
 
