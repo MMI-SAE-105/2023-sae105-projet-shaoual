@@ -154,3 +154,19 @@ object-fit: cover; /* S'assure que l'image remplit bien le cadre */
     font-family: Baloo2, sans-serif;
 }
 
+
+/* MISE EN FORME PAGE GLOSSAIRE */
+
+.container__glossaire {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Ajoutez un espace entre les éléments du conteneur */
+}
+
+.image-flottante {
+    flex: 0 0 auto; /* Empêche l'image de changer de taille */
+    width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
+    height: 100px; /* Ajustez la hauteur de l'image selon vos besoins */
+    margin-right: 20px; /* Ajoutez un espace entre l'image et le texte */
+    border-radius: 50%; /* Rend l'image ronde */
+}
