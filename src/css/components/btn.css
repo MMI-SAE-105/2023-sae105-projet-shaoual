@@ -12,14 +12,43 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner du relief */
   transition: all 0.3s ease; /* Transition douce pour les interactions */
   font-family: Baloo2, sans-serif;
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100px;
   height: 41px;
+  font-size: 12px;
+ margin-bottom: 40px;
+  margin-left:200px;
+}
+
+.contact-button:hover {
+ border-radius: 5px;
+background: var(--degrad-orange, linear-gradient(90deg, #CF8130 40%, #FFF 116%));/* Dégradé un peu plus foncé pour l'effet hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée pour l'effet hover */
+
+}
+
+
+.Apropos-button {
+    
+  padding: 10px 5px;
+  background: var(--degrad-orange, linear-gradient(90deg, #CF8130 40%, #FFF 116%)); /* Dégradé approximatif basé sur votre description */
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px; /* Ajustez la taille du texte comme nécessaire */
+  font-weight: bold;
+  border-radius: 10px; /* Pour les coins arrondis */
+  text-transform: uppercase; /* Texte en majuscules */
+  text-decoration: none; /* Supprime le soulignement des liens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour donner du relief */
+  transition: all 0.3s ease; /* Transition douce pour les interactions */
+  font-family: Baloo2, sans-serif;
+  margin-top: 40px;
   font-size: 12px;
   margin: 30px;
 }
 
-.contact-button:hover {
+
+.Apropow-button:hover {
  border-radius: 5px;
 background: var(--degrad-orange, linear-gradient(90deg, #CF8130 40%, #FFF 116%));/* Dégradé un peu plus foncé pour l'effet hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée pour l'effet hover */
