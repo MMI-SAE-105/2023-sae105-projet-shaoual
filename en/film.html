@@ -59,8 +59,136 @@
     </header>
 
 
+<h4 class="heading__1">The Hunger Games</h4>
+
+<img class="img_livre" src="/public/img/Affiche_film.webp" alt="img__film">
+
+<ul class="categories-list">
+    <li><span class="dot action"></span>Action</li>
+    <li><span class="dot adventure"></span>Adventure</li>
+    <li><span class="dot sci-fi"></span>Sci-Fi</li>
+</ul>
+
+<div class="song-details">
+    <p><strong>Director:</strong> Gary Ross</p>
+    <p><strong>Release Date:</strong> 2012</p>
+    <p><strong>Duration:</strong> 142 minutes</p>
+    <p><strong>Genre:</strong> Dystopia, Action, Adventure</p>
+</div>
+
+<p class="text">
+    In a dark future, Panem is composed of the Capitol and 12 surrounding districts. To brutally remind of a long-ago
+    crushed
+    rebellion, the Capitol organizes the "Hunger Games" each year, a deadly televised competition. Each district is
+    forced to randomly select a boy and a girl, called "tributes", to fight to the death in a monitored arena.
+</p>
+
+<p class="text">
+    When Katniss Everdeen's younger sister is chosen as a tribute, Katniss decides to take her place, plunging herself
+    into a battle that will not only endanger her life but also test her beliefs and heart.
+</p>
+
+<h2 class="heading__2">Quote</h2>
+<div class="container__2">
+    <p class="text">
+        "May the odds be ever in your favor!" This phrase, pronounced with false cheerfulness by the Games' hosts, has
+        become the chilling rallying cry of the Hunger Games. It remains a constant reminder of the Capitol's cruelty
+        and the gravity of each choice made by the tributes inside the arena. To feel the atmosphere and
+        intensity of the Games, discover <a href="/fr/musique.html" class="film-link">the associated music playlist</a>.
+    </p>
+
+    <img class="katniss__D" src="/public/img/gale_profil_D.webp" alt="img__katniss_D">
+</div>
+
+<h2 class="heading__2">Main Characters</h2>
+
+<!--CARROUSSEL-->
+<div x-data="{ slideActuel: 1 }" class="galerie-hero">
+    <div class="conteneur-slider">
+        <button @click="slideActuel = slideActuel > 1 ? slideActuel - 1 : 2"
+            class="bouton-nav bouton-gauche">&lt;</button>
+
+        <!-- Première série d'images -->
+        <div class="ensemble-slides" x-show="slideActuel === 1">
+
+            <div class="description">
+                <img src="/public/img/jennifer_lawrence.webp" alt="Jennifer Lawrence comme Katniss Everdeen"
+                    class="image-principale">
+                <h3>Jennifer Lawrence</h3>
+                <p>Katniss Everdeen</p>
+            </div>
+
+            <div class="description">
+                <img src="/public/img/Josh_Hutcherson.webp" alt="Josh Hutcherson comme Peeta Mellark"
+                    class="image-principale">
+                <h3>Josh Hutcherson</h3>
+                <p>Peeta Mellark</p>
+            </div>
+
+            <div class="description">
+                <img src="/public/img/Liam_Hemsworth.webp" alt="Liam Hemsworth comme Gale Hawthorne"
+                    class="image-principale">
+                <h3>Liam Hemsworth</h3>
+                <p>Gale Hawthorne</p>
+            </div>
+        </div>
+
+        <!-- Deuxième série d'images -->
+        <div class="ensemble-slides" x-show="slideActuel === 2">
+
+            <div class="description">
+                <img src="/public/img/Willow_Shields.webp" alt="Willow Shields comme Primrose Everdeen"
+                    class="image-principale">
+                <h3>Willow Shields</h3>
+                <p>Primerose Everdeen</p>
+            </div>
+
+            <div class="description">
+                <img src="/public/img/Woody_Herrelson.webp" alt="Woody Harrelson comme Haymitch Abernathy"
+                    class="image-principale">
+                <h3>Woody Herrelson</h3>
+                <p>Haymitch Abernathy</p>
+            </div>
+
+            <div class="description">
+                <img src="/public/img/Stanley_Tucci.webp" alt="Stanley Tucci comme Caesar Flickerman"
+                    class="image-principale">
+                <h3>Stanley Tucci</h3>
+                <p>Caesar Flickerman</p>
+            </div>
+        </div>
+
+        <button @click="slideActuel = slideActuel < 2 ? slideActuel + 1 : 1"
+            class="bouton-nav bouton-droit">&gt;</button>
+    </div>
+</div>
+
+<!--FIN CARROUSSEL-->
 
 
+<h2 class="heading__2">Director</h2>
+
+<img src="/public/img/gary_ross.webp" alt="Gary Ross" class="image-auteur">
+
+<p class="small_text_auteur">Gary Ross</p>
+
+<p class="text">
+    The director of "The Hunger Games", Gary Ross, is an iconic figure in Hollywood. With a career spanning several
+    decades, he successfully captured the essence of Collins' work, visually translating it for the big screen. His
+    meticulous approach and dedication have brought Panem to life in an unforgettable way.
+</p>
+
+<h2 class="heading__2">Official Trailer</h2>
+<video controls class="video-style">
+    <source src="/public/video/HungerGames_Trailer.mp4" type="video/mp4">
+</video>
+
+<h2 class="heading__2">Reception and Impact</h2>
+<p class="text">
+    "The Hunger Games" was praised for its impressive performances, particularly that of Jennifer Lawrence, as well as
+    its fidelity to the source material. The film spawned a series of equally popular sequels and solidified its status
+    as a cultural phenomenon, drawing attention to societal issues of power and control.
+</p>
 
 
 
