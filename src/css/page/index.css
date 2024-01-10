@@ -193,3 +193,39 @@ object-fit: cover; /* S'assure que l'image remplit bien le cadre */
 }
 
 
+.categories-list {
+  list-style-type: none; /* Enlève les puces par défaut */
+  padding-left: 0; /* Enlève le padding à gauche */
+  display: flex; /* Affiche les éléments de la liste en ligne */
+  gap: 10px; /* Espace entre les éléments de la liste */
+  color: #FFFFFF; /* Couleur du texte */
+  background-color: #000000; /* Couleur de fond */
+  padding: 5px 10px; /* Espace intérieur pour le fond */
+  font-family: Baloo2, sans-serif;
+    font-size: 14px;
+}
+
+.dot {
+  height: 5px; /* Hauteur de la puce */
+  width: 5px; /* Largeur de la puce */
+  background-color:  var(--orange, #DE8500); /* Couleur de la puce par défaut */
+  border-radius: 50%; /* Rend la puce ronde */
+  display: inline-block; /* Permet à la puce d'être en ligne avec le texte */
+  margin-right: 5px; /* Espace entre la puce et le texte */
+}
+
+.action {
+  background-color:  var(--orange, #DE8500);
+} /* Couleur spécifique pour 'Action' */
+ 
+
+.adventure {
+ background-color:  var(--orange, #DE8500);
+}
+
+.sci-fi {
+ background-color:  var(--orange, #DE8500);
+}
+
+
+
