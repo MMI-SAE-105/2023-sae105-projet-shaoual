@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Hunger Games</title>
+</head>
+
+<body class="body">
+
+    <header x-data="{ open: false }" class="navigation-container">
+        <div class="header">
+            <span class="logo">HungerFuns</span>
+            <!-- Burger menu button with accessible text -->
+            <button @click="open = !open" class="burger" :class="{ 'active': open }" :aria-expanded="open.toString()"
+                aria-controls="navigation" aria-label="Main menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Navigation with ID for aria-controls -->
+        <nav class="header__menu" x-show="open" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="/fr/index.html">HungerFuns
+                    </a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article.html">Evolution of Katniss Everdeen</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/musique.html">The Hanging Tree</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/Apropos.html">About</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/film.html">Hunger Games I</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/livre.html">Book-Hunger Games</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossary</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/autreProjet.html">Other projects</a>
+                </li>
+
+                <li class="menu__item"><a href="/en/index.html" aria-label="English version"><img class="footer__flag1"
+                            src="/public/icons/drapeau_uk.webp" alt="English"></a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div> <!--DIV -->
+        <img class="img_index" src="/public/img/hunger_games_accueil 1.webp" alt="homepage image">
+        <h1 class="titre__replique">"May the odds be ever in your favor"</h1>
+        <h2 class="heading__2">Explore the world of Hunger Games, its protagonists, its music, and the cultural
+            influence of the movie.</h2>
+        <div class="img__affiche">
+            <img class="img_affiche" src="/public/img/Affiche_film.webp" alt="movie poster">
+        </div>
+
+        <h2 class="heading__2">Explore our recent articles!</h2>
+
+        <!-- CARDS -->
+
+        <article class="card">
+            <div class="card__img">
+                <img :src="card.picture" src="/public/img/arena_1.webp" alt="arena" class="card-image">
+            </div>
+            <div class="card__caption">
+                <h3 class="card__title" x-text="card.title">The Arena: Beyond the Game</h3>
+                <p class="card__excerpt" x-text="card.excerpt"> "Each arena tells a story. Discover Panem's."</p>
+                <a class="card__link uppercase" :href="card.link" href="/fr/article.html">READ MORE</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card__img">
+                <img :src="card.picture" src="/public/img/katniss_1.webp" alt="Katniss" class="card-image">
+            </div>
+            <div class="card__caption">
+                <h3 class="card__title" x-text="card.title">The Flame That Ignites the Rebellion</h3>
+                <p class="card__excerpt" x-text="card.excerpt">"The girl on fire who redefined destiny."</p>
+                <a class="card__link uppercase" :href="card.link" href="/fr/article.html">READ MORE</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card__img">
+                <img :src="card.picture" src="/public/img/peeta_1.webp" alt="Peeta" class="card-image">
+            </div>
+            <div class="card__caption">
+                <h3 class="card__title" x-text="card.title">Peeta: Loyalty in the Game</h3>
+                <p class="card__excerpt" x-text="card.excerpt">"A loyal heart in a game of betrayals."</p>
+                <a class="card__link uppercase" :href="card.link" href="/fr/article.html">READ MORE</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card__img">
+                <img :src="card.picture" src="/public/img/capitol_1.webp" alt="Capitol" class="card-image">
+            </div>
+            <div class="card__caption">
+                <h3 class="card__title" x-text="card.title">The Capitol: Splendors and Oppressions</h3>
+                <p class="card__excerpt" x-text="card.excerpt">"The gleam of power often hides shadows."</p>
+                <a class="card__link uppercase" :href="card.link" href="/fr/article.html">READ MORE</a>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="card__img">
+                <img :src="card.picture" src="/public/img/mentors_1.webp" alt="mentors_1" class="card-image">
+            </div>
+            <div class="card__caption">
+                <h3 class="card__title" x-text="card.title">Mentors: Hidden Guides of the Games</h3>
+                <p class="card__excerpt" x-text="card.excerpt">"Behind every tribute, a guide, a story."</p>
+                <a class="card__link uppercase" :href="card.link" href="/fr/article.html">READ MORE</a>
+            </div>
+
+        </article>
+
+        <!--END CARDS-->
+        <h2 class="heading__5">Did You Know?</h2>
+        <div class="container__7">
+
+            <p class="text_1">
+                Film VS Book In the book, Katniss and Gale are described as having olive skin and black hair. However,
+                in the movie, they both have fair skin and brown hair.
+                <br>
+                <br>
+
+                In the book, Haymitch is described as being portly with curly black hair and pale gray eyes, but
+                in the movie, he is slim, with straight blond hair and light blue eyes.
+                <br>
+                <br>
+                The book says Katniss is shorter than most of the tributes, but in the movie, she is taller than
+                most of them, even some of the Careers.
+            </p>
+
+            <img class="katniss__S" src="/public/img/katniss__S.webp" alt="Katniss image">
+        </div>
+
+        <!--FOOTER-->
+
+        <footer class="footer">
+            <div class="footer__content">
+                <h1 class="logo_footer">HungerFuns</h1>
+                <p class="text__footer1">Selma Haoual</p>
+                <p class="text__footer1">Group C2</p>
+
+                <nav>
+                    <ul class="list-unstyled">
+                        <li class="footer__list-menu"><a class="footer__list-item" href="/fr/contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <h2 class="text__icon">FOLLOW US</h2>
+                <div class="social-icons">
+                    <a href="https://instagram.com" aria-label="Instagram"><img src="/public/icons/instagram.svg"
+                            alt="Instagram"></a>
+                    <a href="https://twitter.com" aria-label="Twitter"><img src="/public/icons/twitter.svg"
+                            alt="Twitter"></a>
+                    <a href="https://facebook.com" aria-label="Facebook"><img src="/public/icons/facebook.svg"
+                            alt="Facebook"></a>
+                </div>
+
+                <div class="footer__flag">
+                    <a href="/en" aria-label="English version"><img class="footer__flag1"
+                            src="/public/icons/drapeau_uk.webp" alt="English"></a>
+                </div>
+
+                <p class="text__footer">Project carried out as part of a pedagogical exercise at the MMI department of
+                    Montbéliard</p>
+            </div>
+        </footer>
+        </div>
+        </body>
+        </html>
