@@ -30,3 +30,4 @@
 /* Pages */
 @import "/src/css/page/index.css";
 @import "/src/css/page/contact.css";
+@import "./page/404.css";
