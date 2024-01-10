@@ -1,3 +1,8 @@
+
+
+
+
+
 .navigation-container {
 background-color: #333;
 color: #FFF;
@@ -8,6 +13,7 @@ font-family: Baloo2, sans-serif;
 display: flex;
 justify-content: space-between;
 align-items: center;
+ z-index: 1000; 
 padding: 1rem;
 }
 
@@ -110,7 +116,8 @@ padding: 0 1rem;
   margin-top: 5vh;
   margin-left: 10vw;
   margin-right: 10vw;
-  color: #FFFF;
+  color: var(--black-site, #FFF);
+  
 }
 
 .menu__link {
@@ -119,6 +126,17 @@ padding: 0 1rem;
     padding: 10px; /* Ajoute un peu d'espace autour du texte pour une meilleure lisibilité */
     display: inline-block; /* Permet l'espacement autour des liens avec 'padding' */
     transition: color 0.3s ease;
+    font-family: Baloo2, sans-serif;
+    font-weight: 500;
+
 
 }
 
+.menu__item {
+    color:transparent;
+}
+
+.header__menu{
+    background:#000;
+   
+}
