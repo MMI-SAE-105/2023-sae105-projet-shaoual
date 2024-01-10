@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Hunger Games</title>
+</head>
+
+<body class="body">
+   
+<header x-data="{ open: false }" class="navigation-container">
+    <div class="header">
+        <span class="logo">HungerFuns</span>
+        <!-- Burger menu button with accessible text -->
+        <button @click="open = !open" class="burger" :class="{ 'active': open }" :aria-expanded="open.toString()"
+            aria-controls="navigation" aria-label="Main menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Navigation with ID for aria-controls -->
+    <nav class="header__menu" x-show="open" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <ul class="menu__list list-unstyled">
+            <li class="menu__item"><a class="menu__link" href="/en/index.html">HungerFuns
+                </a></li>
+            <li class="menu__item"><a class="menu__link" href="/en/article.html">Evolution of Katniss Everdeen</a>
+            </li>
+
+            <li class="menu__item"><a class="menu__link" href="/en/musique.html">The Hanging Tree</a>
+            </li>
+
+            <li class="menu__item"><a class="menu__link" href="/en/Apropos.html">About</a>
+            </li>
+
+            <li class="menu__item"><a class="menu__link" href="/en/film.html">Hunger Games I</a>
+            </li>
+
+            <li class="menu__item"><a class="menu__link" href="/en/livre.html">Book-Hunger Games</a>
+            </li>
+
+            <li class="menu__item"><a class="menu__link" href="/en/glossaire.html">Glossary</a>
+            </li>
+
+            <li class="menu__item"><a class="menu__link" href="/en/autreProjet.html">Other projects</a>
+            </li>
+
+            <li class="menu__item"><a href="/en/index.html" aria-label="English version"><img class="footer__flag1"
+                        src="/public/icons/drapeau_uk.webp" alt="English"></a>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- (The content between the header and footer is not included in the translation request) -->
+
+    <footer class="footer">
+        <div class="footer__content">
+            <h1 class="logo_footer">HungerFuns</h1>
+            <p class="text__footer1">Selma Haoual</p>
+            <p class="text__footer1">Group C2</p>
+
+            <nav>
+                <ul class="list-unstyled">
+                    <li class="footer__list-menu"><a class="footer__list-item" href="/en/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <h2 class="text__icon">FOLLOW US</h2>
+            <div class="social-icons">
+                <a href="https://instagram.com" aria-label="Instagram"><img src="/public/icons/instagram.svg"
+                        alt="Instagram"></a>
+                <a href="https://twitter.com" aria-label="Twitter"><img src="/public/icons/twitter.svg"
+                        alt="Twitter"></a>
+                <a href="https://facebook.com" aria-label="Facebook"><img src="/public/icons/facebook.svg"
+                        alt="Facebook"></a>
+            </div>
+
+            <div class="footer__flag">
+                <a href="/en" aria-label="English version"><img class="footer__flag1"
+                        src="/public/icons/drapeau_uk.webp" alt="English"></a>
+            </div>
+
+            <p class="text__footer">Project carried out as part of a pedagogical exercise at the MMI department of
+                Montbéliard</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
