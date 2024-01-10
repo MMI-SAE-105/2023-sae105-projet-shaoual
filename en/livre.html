@@ -59,6 +59,162 @@
     </header>
 
 
+<h4 class="heading__1">Book - The Hunger Games</h4>
+<h2 class="heading__2">
+    Discover "The Hunger Games" novel by Suzanne Collins, a captivating dystopian work that gave rise to a
+    remarkable film adaptation, which you can discover <a href="/fr/film.html" class="film-link">here</a>. Follow the
+    journey of
+    Katniss Everdeen, a daring young girl, in a world where survival is a daily struggle.
+</h2>
+
+<img class="img_livre" src="/public/img/affiche_livre.webp" alt="img__livre">
+
+<div class="song-details">
+    <p><strong>Author:</strong> Suzanne Collins</p>
+    <p><strong>Publication:</strong> 2008</p>
+    <p><strong>Genre:</strong> Dystopia, Science Fiction</p>
+</div>
+
+<p class="text">
+    Set in the ruins of North America, a powerful and authoritarian state, the Capitol, rules over the 12
+    districts. Each year, as a punishment for a past rebellion, the Capitol organizes the Hunger Games, a
+    televised event where a boy and a girl, called "tributes", from each district are randomly chosen
+    to fight to the death in a controlled arena, until only one survivor remains.
+</p>
+
+<h2 class="heading__2">
+    Author
+</h2>
+
+<img src="/public/img/Susan_Collins.webp" alt="Susan Collins" class="image-auteur">
+
+<p class="small_text_auteur">Suzanne Collins</p>
+
+<p class="text_1">
+    Suzanne Collins is an American author and screenwriter. Before creating "The Hunger Games", she worked on
+    several children's television shows. The Hunger Games series was inspired by the shift from reality TV to war
+    coverage. The series has been a huge international success and
+    has been adapted into an equally popular film series.
+</p>
+
+<h2 class="heading__2">
+    "May the odds be ever in your favor"
+</h2>
+
+<div class="container__2">
+    <p class="text">
+        This phrase resonates heavily throughout the districts of Panem. It is uttered by the Game organizers
+        each year, reminding all participants of the stakes and dangers they face. While it may seem like a wish for
+        good luck on the surface, it hides an underlying threat reminding the tributes of the
+        Capitol's cruelty. The line embodies the Capitol's false sympathy while unveiling its true tyrannical nature.
+    </p>
+
+    <img class="katniss__D" src="/public/img/peeta_profilD.webp" alt="img__peeta_D">
+</div>
+
+<h2 class="heading__2">
+    Cultural Impact
+</h2>
+
+<p class="text">
+    Since its publication, The Hunger Games has sparked countless discussions on topics such as war,
+    governance, the impact of difficult choices, and the influence of media on society. It has also inspired a
+    new generation of young people to take an interest in reading and to participate in political and social
+    discussions.
+</p>
+
+<h2 class="heading__2">
+    Discover our selection of books!
+</h2>
+
+<!--carroussel livre-->
+
+<div x-data="{hrefCourant:'#ecran-1',}">
+    <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+                [...$refs.parent.children]
+                .find(e=>e.getBoundingClientRect().x>=0)
+                .id">
+        <div id="ecran-1" class="carrousel_ecran">
+            <figure>
+                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth"
+                    class="carrousel_btn carrousel_btn-avant" aria-label="Carte avant"><img
+                        src="/public/icons/chevron-left.svg" alt="flèche gauche"></button>
+                <button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth"
+                    class="carrousel_btn carrousel_btn-apres" aria-label="Carte siivante"><img
+                        src="/public/icons/chevron-right.svg" alt="flèche droite"></button>
+
+
+
+
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__1.webp" alt="sagrada familia">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link"
+                            href="https://www.amazon.fr/Divergente-1-Veronica-Roth/dp/2092552988">Divergente
+                            par Veronica Roth</a></h3>
+                </div>
+            </figure>
+        </div>
+
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__2.webp" alt="livre">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link"
+                            href="https://www.amazon.fr/S%C3%A9lection-Livre-I-01/dp/2221129288">La Sélection
+                            par Kiera Cass</a></h3>
+
+                </div>
+            </figure>
+        </div>
+
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__3.webp" alt="livre">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link"
+                            href="https://www.amazon.fr/5e-Vague-1/dp/2221134257">La 5e Vague
+                            par Rick Yancey</a></h3>
+
+                </div>
+        </div>
+        </figure>
+
+        <div id="ecran-4" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__4.webp" alt="livre">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link"
+                            href="https://www.amazon.fr/1-L%C3%A9preuve-labyrinthe-James-DASHNER/dp/2266200127">Le
+                            Labyrinthe
+                            James Dashner</a></h3>
+                </div>
+            </figure>
+        </div>
+
+        <div id="ecran-5" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__5.webp" alt="livre">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link"
+                            href="https://www.amazon.fr/Legend-T01-Marie-Lu/dp/2362310639">Legend
+                            par Marie Lu</a></h3>
+                </div>
+            </figure>
+        </div>
+
+    </div>
+</div>
+</article>
 
 
 
@@ -77,7 +233,9 @@
 
 
 
-    <!-- (The content between the header and footer is not included in the translation request) -->
+
+    
+    
 
     <footer class="footer">
         <div class="footer__content">
