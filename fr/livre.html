@@ -121,6 +121,65 @@
     Découvrez notre sélection de livres !
 </h2>
 
+<div x-data="{hrefCourant:'#ecran-1',}">
+    <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+                [...$refs.parent.children]
+                .find(e=>e.getBoundingClientRect().x>=0)
+                .id">
+        <div id="ecran-1" class="carrousel_ecran">
+            <figure>
+                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth"
+                    class="carrousel_btn carrousel_btn-avant" aria-label="Carte avant"><img
+                        src="../public/icon/chevron-left.svg" alt="flèche gauche"></button>
+                <button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth"
+                    class="carrousel_btn carrousel_btn-apres" aria-label="Carte siivante"><img
+                        src="../public/icon/chevron-right.svg" alt="flèche droite"></button>
+
+
+
+
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="../public/img/sagrada-familia1.webp"
+                        alt="sagrada familia">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="../fr/sagrada.html">Sagrada
+                            Família
+                            <!--ajout le chemin vers l'oeuvre sur href-->
+                            1883 - 1926</a></h3>
+                </div>
+            </figure>
+        </div>
+
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="../public/img/casa_batllo1.webp"
+                        alt="Casa Batlló 1904 - 1906">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link"
+                            href="../fr/casa_batillo.html">Casa Batlló
+                            1904 - 1906</a></h3>
+
+                </div>
+            </figure>
+        </div>
+
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="../public/img/Parc_guell1.webp"
+                        alt="Casa Batlló 1904 - 1906">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="../fr/parc_guell.html">Parc
+                            Güell
+                            1900 - 1914</a></h3>
+
+                </div>
+            </figure>
+
 
     </body>
     
