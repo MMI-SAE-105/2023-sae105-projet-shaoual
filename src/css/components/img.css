@@ -41,5 +41,12 @@ margin: auto;
     justify-content: center; /* Centre horizontalement */
     align-items: center; 
     
+}
 
+.video-style {
+    width:370px; /* La vidéo prendra toute la largeur de son conteneur */
+    max-width: 600px; /* La largeur maximale de la vidéo */
+    height: auto; /* La hauteur s'ajuste pour conserver le ratio de l'aspect */
+  /* Élimine les marges ou l'espacement par défaut autour de la vidéo */
+    margin: 10px; /* Centre la vidéo horizontalement si le conteneur est plus large que la vidéo */
 }
