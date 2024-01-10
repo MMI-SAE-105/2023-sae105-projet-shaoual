@@ -23,23 +23,33 @@
         </div>
     
         <!-- Navigation avec ID pour aria-controls -->
-        <nav x-show="open" id="mainNav" :class="menuIsOpen && 'menu--open'">
-            <ul class="menu__list">
-                <li><a class="menu__link" href="/fr/index.html">Accueil
+        <nav class="header__menu" x-show="open" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="/fr/index.html">HungerFuns
                     </a></li>
-                <li><a class="menu__link" href="/fr/article.html">Articles</a>
+                <li class="menu__item"><a class="menu__link" href="/fr/article.html">Évolution de Katniss Everdeen</a>
                 </li>
-
-                <li><a class="menu__link" href="/fr/musique.html">Musique</a>
+    
+                <li class="menu__item"><a class="menu__link" href="/fr/musique.html">The Hanging Tree</a>
                 </li>
-
-                <li><a class="menu__link" href="/fr/Apropos.html">À propos</a>
+    
+                <li class="menu__item"><a class="menu__link" href="/fr/Apropos.html">À propos</a>
                 </li>
-
-                <li><a class="menu__link" href="/fr/film.html">Hunger Games</a>
+    
+                <li class="menu__item"><a class="menu__link" href="/fr/film.html">Hunger Games I</a>
                 </li>
-
-                <li><a class="menu__link" href="/fr/livre.html">Livre-Hunger Games</a>
+    
+                <li class="menu__item"><a class="menu__link" href="/fr/livre.html">Livre-Hunger Games</a>
+                </li>
+    
+                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+    
+                <li class="menu__item"><a class="menu__link" href="/fr/autreProjet.html">Autre projets</a>
+                </li>
+    
+                <li class="menu__item"><a href="/en/index.html" aria-label="English version"><img class="footer__flag1"
+                            src="/public/icons/drapeau_uk.webp" alt="English"></a>
                 </li>
     
             </ul>
