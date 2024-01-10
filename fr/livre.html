@@ -121,6 +121,8 @@
     Découvrez notre sélection de livres !
 </h2>
 
+<!--carroussel livre-->
+
 <div x-data="{hrefCourant:'#ecran-1',}">
     <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
                 [...$refs.parent.children]
@@ -130,23 +132,22 @@
             <figure>
                 <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth"
                     class="carrousel_btn carrousel_btn-avant" aria-label="Carte avant"><img
-                        src="../public/icon/chevron-left.svg" alt="flèche gauche"></button>
+                        src="/public/icons/chevron-left.svg" alt="flèche gauche"></button>
                 <button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth"
                     class="carrousel_btn carrousel_btn-apres" aria-label="Carte siivante"><img
-                        src="../public/icon/chevron-right.svg" alt="flèche droite"></button>
+                        src="/public/icons/chevron-right.svg" alt="flèche droite"></button>
 
 
 
 
                 <div class="carrousel-card__img">
-                    <img class="carrousel-card__img-retouch" src="../public/img/sagrada-familia1.webp"
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__1.webp"
                         alt="sagrada familia">
                 </div>
                 <div class="carrousel-card__caption">
-                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="../fr/sagrada.html">Sagrada
-                            Família
-                            <!--ajout le chemin vers l'oeuvre sur href-->
-                            1883 - 1926</a></h3>
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="">Divergente
+                            <!--ajout le chemin vers le livre sur href-->
+                            par Veronica Roth</a></h3>
                 </div>
             </figure>
         </div>
@@ -154,13 +155,13 @@
         <div id="ecran-2" class="carrousel_ecran">
             <figure>
                 <div class="carrousel-card__img">
-                    <img class="carrousel-card__img-retouch" src="../public/img/casa_batllo1.webp"
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__2.webp"
                         alt="Casa Batlló 1904 - 1906">
                 </div>
                 <div class="carrousel-card__caption">
                     <h3 class="carrousel-card__title"><a class="carrousel-card__link"
-                            href="../fr/casa_batillo.html">Casa Batlló
-                            1904 - 1906</a></h3>
+                            href="">La Sélection
+                            par Kiera Cass</a></h3>
 
                 </div>
             </figure>
@@ -169,18 +170,43 @@
         <div id="ecran-3" class="carrousel_ecran">
             <figure>
                 <div class="carrousel-card__img">
-                    <img class="carrousel-card__img-retouch" src="../public/img/Parc_guell1.webp"
+                    <img class="carrousel-card__img-retouch" src="/public/img/livre__3.webp"
                         alt="Casa Batlló 1904 - 1906">
                 </div>
                 <div class="carrousel-card__caption">
-                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="../fr/parc_guell.html">Parc
-                            Güell
-                            1900 - 1914</a></h3>
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="">La 5e Vague
+                    par Rick Yancey</a></h3>
 
                 </div>
             </figure>
 
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <div class="carrousel-card__img">
+                        <img class="carrousel-card__img-retouch" src="/public/img/livre__4.webp" alt="Casa Batlló 1904 - 1906">
+                    </div>
+                    <div class="carrousel-card__caption">
+                        <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="">Le Labyrinthe
+                        James Dashner</a></h3>
+            
+                    </div>
+                </figure>
 
+
+
+
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/livre__5.webp" alt="Casa Batlló 1904 - 1906">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="">
+                                Legend
+                                    par Marie Lu</a></h3>
+                
+                        </div>
+                    </figure>
     </body>
     
     </html>
