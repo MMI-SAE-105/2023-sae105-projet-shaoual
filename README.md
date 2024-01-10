@@ -1,7 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
 - NOM : Haoual
 - PRÉNOM : Selma
-- URL du site : https://hungergame-selmahaoual.netlify.app
+- URL du site netlify : https://hungergame-selmahaoual.netlify.app
+- URL du site public : http://hungerfunss.selmahaoual.fr/
 - URL FIGMA : https://www.figma.com/file/y2ay50I2A81rtNCyVdskpN/SELMA-HAOUAL_Projet-Solo?type=design&node-id=322%3A1210&mode=design&t=hpxVc31KZA9mOz3U-1
 
 # Structure de départ pour le projet individuel.
