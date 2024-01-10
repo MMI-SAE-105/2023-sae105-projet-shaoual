@@ -85,6 +85,7 @@ display: flex;
 .burger {
 display: none;
 }
+}
 
 .menu {
 display: flex;
@@ -93,27 +94,31 @@ flex-direction: row;
 justify-content: flex-end;
 }
 
-.menu__list {
-  margin-top: 5vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  background:red;
-}
 
 
-.menu__item {
-  margin-top: 15%;
-}
 
-.menu__link {
-  color: #FFFF;
-  text-decoration: none;
-}
 .menu a {
 padding: 0 1rem;
 }
-}
+
 
  .body {
     background-color:  rgba(0, 0, 0, 1);
   }
+
+  .menu__list {
+  margin-top: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  color: #FFFF;
+}
+
+.menu__link {
+    color: var(--black-site, #FFF);
+    text-decoration: none;
+    padding: 10px; /* Ajoute un peu d'espace autour du texte pour une meilleure lisibilité */
+    display: inline-block; /* Permet l'espacement autour des liens avec 'padding' */
+    transition: color 0.3s ease;
+
+}
+
