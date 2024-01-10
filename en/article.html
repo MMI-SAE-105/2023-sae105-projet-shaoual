@@ -61,6 +61,108 @@
 
 
 
+<h4 class="heading__1">The Evolution of Katniss Everdeen: From Survivor to the Symbol of Rebellion</h4>
+
+<h2 class="heading__2">Discover the exceptional journey of Katniss Everdeen, the face of the rebellion who went from a
+    simple resident of District 12 to the icon of an entire movement.</h2>
+
+<img class="img_artiste" src="/public/img/katniss_2.webp" alt="img__katniss">
+
+<p class="text">In the tumultuous universe of "Hunger Games", one figure stands out: Katniss Everdeen. Her strength and
+    determination have not only captured the attention of the Capitol but have also ignited the flame of rebellion
+    across the districts.</p>
+
+<h2 class="heading__2">The Survivor of District 12</h2>
+
+<img class="img_artiste" src="/public/img/district12_2.webp" alt="img__district12">
+
+<p class="text">Every morning, in the dark forests of District 12, a young girl with a bow hunted game, ensuring the
+    survival of her family. This survivor was Katniss.</p>
+<!--NEED TO ADD SPACE-->
+<p class="text">"The fire burning in Katniss has ignited all of Panem. She is the girl on fire."</p>
+
+<h2 class="heading__2">The Symbol of Rebellion</h2>
+<img class="img_artiste" src="/public/img/signe_rebellion.webp" alt="img__rebellion">
+
+<p class="text">Katniss's decision to defy the Capitol made her much more than just a tribute. She became the
+    Mockingjay, the living symbol of resistance.</p>
+
+<!--NEED TO PUT TEXT NEXT TO IMAGE-->
+<div class="container__2">
+    <p class="text">
+        Katniss Everdeen, more than just a character, is the heart and soul of "Hunger Games". She embodies resilience,
+        courage, and hope in a world full of despair.
+    </p>
+
+    <img class="katniss__D" src="/public/img/katniss_profil_D.webp" alt="img__katniss_D">
+</div>
+
+<!--NEED AN IMAGE CAROUSEL-->
+<div x-data="{ currentSlide: 1 }" class="gallery">
+    <div class="main-image">
+        <button @click="currentSlide = currentSlide > 1 ? currentSlide - 1 : 4" class="nav-button left">&lt;</button>
+
+        <img x-show="currentSlide === 1" src="/public/img/img_1_gallerie.webp" alt="Image 1" class="slide">
+        <img x-show="currentSlide === 2" src="/public/img/img_2_gallerie.webp" alt="Image 2" class="slide">
+        <img x-show="currentSlide === 3" src="/public/img/img_3_gallerie.webp" alt="Image 3" class="slide">
+        <img x-show="currentSlide === 4" src="/public/img/img_4_gallerie.webp" alt="Image 4" class="slide">
+
+        <button @click="currentSlide = currentSlide < 4 ? currentSlide + 1 : 1" class="nav-button right">&gt;</button>
+    </div>
+
+    <div class="thumbnails">
+        <img @click="currentSlide = 1" src="/public/img/img_1_gallerie.webp" :class="{ 'active': currentSlide === 1 }"
+            class="thumbnail" alt="Thumbnail Image 1">
+        <img @click="currentSlide = 2" src="/public/img/img_2_gallerie.webp" :class="{ 'active': currentSlide === 2 }"
+            class="thumbnail" alt="Thumbnail Image 2">
+        <img @click="currentSlide = 3" src="/public/img/img_3_gallerie.webp" :class="{ 'active': currentSlide === 3 }"
+            class="thumbnail" alt="Thumbnail Image 3">
+        <img @click="currentSlide = 4" src="/public/img/img_4_gallerie.webp" :class="{ 'active': currentSlide === 4 }"
+            class="thumbnail" alt="Thumbnail Image 4">
+    </div>
+</div>
+
+<!--END-->
+
+<!--ARTICLES-->
+
+<h2 class="heading__2">Articles</h2>
+
+<h2 class="heading__2">The Arena: Beyond the Game</h2>
+
+<img class="img__articles" src="/public/img/arena_1.webp" alt="img__articles">
+<p class="small_text">The Arena-Hunger Games</p>
+<p class="text">At the heart of Panem, the arena is not just a simple place of
+
+
+<h2 class="heading__2">Katniss: The Flame That Ignites Revolt</h2>
+<img class="img__articles" src="/public/img/katniss_1.webp" alt="img__articles">
+<p class="small_text">Katniss-Hunger Games</p>
+<p class="text">From modest District 12 to the ruthless arena of the Hunger Games, Katniss Everdeen is much more than a
+    mere survivor. The flame of revolt has a name, and it is Katniss Everdeen. In exploring her journey, we discover a
+    determined and complex Katniss, ready to defy a system to protect those she loves.</p>
+
+<h2 class="heading__2">Peeta: Loyalty in Play</h2>
+<img class="img__articles" src="/public/img/peeta_1.webp" alt="img__articles">
+<p class="small_text">Peeta-Hunger Games</p>
+<p class="text">In the shadow of the bloody games of Panem, one figure stands out for his integrity and devotion: Peeta
+    Mellark. A baker by trade, but a hero by circumstance, his loyalty to Katniss Everdeen never wavered, even in the
+    face of the Capitol's manipulations. Beyond the arena, his inner struggle reveals a man confronted with his own
+    demons, seeking his place in a world in full revolution.</p>
+
+<h2 class="heading__2">The Capitol: Splendor and Oppression</h2>
+<img class="img__articles" src="/public/img/capitol_1.webp" alt="img__articles">
+<p class="small_text">Capitol-Hunger Games</p>
+<p class="text">From modest District 12 to the ruthless arena of the Hunger Games, Katniss Everdeen is much more than a
+    mere survivor. The flame of revolt has a name, and it is Katniss Everdeen. In exploring her journey, we discover a
+    determined and complex Katniss, ready to defy a system to protect those she loves.</p>
+
+<h2 class="heading__2">Mentors: Hidden Guides of the Games</h2>
+<img class="img__articles" src="/public/img/mentors_1.webp" alt="img__articles">
+<p class="small_text">Mentors-Hunger Games</p>
+<p class="text">Behind the bloody scenes of the Hunger Games, often lie unknown but essential figures: the mentors. Even
+    if the spotlight is seldom on them, they remain the silent pillars of this macabre competition. These veterans, once
+    tributes and survivors of the arena, are the silent guardians of the new recruits.</p>
 
 
 
@@ -71,13 +173,6 @@
 
 
 
-
-
-
-
-
-
-    <!-- (The content between the header and footer is not included in the translation request) -->
 
     <footer class="footer">
         <div class="footer__content">
