@@ -14,9 +14,9 @@
 @import "./base/media.css";
 
 /* Règles de composition */
-@import "./src/css/layout/footer.css";
-@import "./src/css/layout/header.css";
-@import "./src/css/layout/article.css";
+@import "/src/css/layout/footer.css";
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/article.css";
 
 /* Composants */
 @import "/src/css/components/menu.css";
