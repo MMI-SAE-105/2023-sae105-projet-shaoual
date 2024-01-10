@@ -2,7 +2,7 @@
 - NOM : Haoual
 - PRÉNOM : Selma
 - URL du site : https://hungergame-selmahaoual.netlify.app
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/y2ay50I2A81rtNCyVdskpN/SELMA-HAOUAL_Projet-Solo?type=design&node-id=322%3A1210&mode=design&t=hpxVc31KZA9mOz3U-1
 
 # Structure de départ pour le projet individuel.
 
