@@ -134,13 +134,14 @@ color: #FFFFFF;
 }
 
 .katniss__S {
-  width: 195px;
+  width: 200px;
 height: 276px;
 object-fit: cover; /* S'assure que l'image remplit bien le cadre */
     margin-right: 20px;
     justify-content: left; /* Centre horizontalement */
     align-items: left; 
     marging-top:auto;
+    margin-bottom: 40px;
 
 
 }
@@ -152,6 +153,7 @@ object-fit: cover; /* S'assure que l'image remplit bien le cadre */
     order: 2; 
     margin-left:0px;
     font-family: Baloo2, sans-serif;
+    margin-bottom: 40px;
 }
 
 
