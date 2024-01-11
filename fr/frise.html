@@ -14,7 +14,9 @@
 
     <header x-data="{ open: false }" class="navigation-container">
         <div class="header">
-            <span class="logo">HungerFuns</span>
+            <a href="/fr/index.html" class="logo-link">
+                <span class="logo">HungerFuns</span>
+            </a>
             <!-- Bouton de menu burger avec texte accessible -->
             <button @click="open = !open" class="burger" :class="{ 'active': open }" :aria-expanded="open.toString()"
                 aria-controls="navigation" aria-label="Menu principal">
@@ -53,7 +55,7 @@
                 <li class="menu__item"><a class="menu__link" href="/fr/frise.html">La Saga Hunger Games</a>
                 </li>
 
-                <li class="menu__item"><a href="/en/index.html" aria-label="English version"><img class="footer__flag1"
+                <li class="menu__item"><a href="/en/index.html" aria-label="English version"><img class="header__flag1"
                             src="/public/icons/drapeau_uk.webp" alt="English"></a>
                 </li>
 

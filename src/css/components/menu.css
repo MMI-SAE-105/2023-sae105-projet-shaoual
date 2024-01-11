@@ -21,6 +21,12 @@ padding: 1rem;
 font-size: 2.0rem;
 }
 
+.logo-link {
+  text-decoration: none; /* Optionnel: retire le soulignement du lien */
+  color: inherit; /* Le lien prendra la couleur du texte du parent, si défini */
+  /* Ajoutez d'autres styles si nécessaire */
+}
+
 .burger {
 cursor: pointer;
 display: flex;
@@ -139,4 +145,11 @@ padding: 0 1rem;
 .header__menu{
     background:#000;
    
+}
+
+.header__flag1 {
+    width: 38px; /* Taille du drapeau */
+    height: 24px;
+    padding-left:220px;
+     
 }
