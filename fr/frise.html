@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Hunger games</title>
+</head>
+
+<body class="body">
+
+    <header x-data="{ open: false }" class="navigation-container">
+        <div class="header">
+            <span class="logo">HungerFuns</span>
+            <!-- Bouton de menu burger avec texte accessible -->
+            <button @click="open = !open" class="burger" :class="{ 'active': open }" :aria-expanded="open.toString()"
+                aria-controls="navigation" aria-label="Menu principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Navigation avec ID pour aria-controls -->
+        <nav class="header__menu" x-show="open" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="/fr/index.html">HungerFuns
+                    </a></li>
+                <li class="menu__item"><a class="menu__link" href="/fr/article.html">Évolution de Katniss Everdeen</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/musique.html">The Hanging Tree</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/Apropos.html">À propos</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/film.html">Hunger Games I</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/livre.html">Livre-Hunger Games</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/autreProjet.html">Autre projets</a>
+                </li>
+
+                <li class="menu__item"><a class="menu__link" href="/fr/frise.html">La Saga Hunger Games</a>
+                </li>
+
+                <li class="menu__item"><a href="/en/index.html" aria-label="English version"><img class="footer__flag1"
+                            src="/public/icons/drapeau_uk.webp" alt="English"></a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+<h2 class="heading__2">
+Plongez dans l'univers captivant de 'Hunger Games' : découvrez les aventures palpitantes qui attendent dans les autres
+films de la saga et rejoignez la rébellion aux côtés de Katniss !
+</h2>
+
+
+<div class="timeline-container">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-element right">
+        <div class="timeline-date">2012</div>
+        <img src="/public/img/frise__1.webp" alt="Hunger Games 2012" class="timeline-image">
+    </div>
+
+    <div class="timeline-element left">
+        <div class="timeline-date">2013</div>
+        <img src="/public/img/frise__2.webp" alt="Hunger Games 2013" class="timeline-image">
+    </div>
+
+    <div class="timeline-element right">
+        <div class="timeline-date">2014</div>
+        <img src="/public/img/frise__3.webp" alt="Hunger Games 2012" class="timeline-image">
+    </div>
+    
+    <div class="timeline-element left">
+        <div class="timeline-date">2015</div>
+        <img src="/public/img/frise__4.webp" alt="Hunger Games 2013" class="timeline-image">
+    </div>
+
+
+    <div class="timeline-element right">
+        <div class="timeline-date">2023</div>
+        <img src="/public/img/frise__5.webp" alt="Hunger Games 2012" class="timeline-image">
+    </div>
+    <!-- Répétez pour les autres éléments, en alternant les classes "left" et "right" -->
+</div>
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+
+
+<footer class="footer">
+    <div class="footer__content">
+        <h1 class="logo_footer">HungerFuns</h1>
+        <p class="text__footer1">Selma Haoual</p>
+        <p class="text__footer1">Groupe C2</p>
+
+        <nav>
+            <ul class="list-unstyled">
+                <li class="footer__list-menu"><a class="footer__list-item" href="/fr/contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2 class="text__icon">NOUS SUIVRE</h2>
+        <div class="social-icons">
+            <a href="https://instagram.com" aria-label="Instagram"><img src="/public/icons/instagram.svg"
+                    alt="Instagram"></a>
+            <a href="https://twitter.com" aria-label="Twitter"><img src="/public/icons/twitter.svg" alt="Twitter"></a>
+            <a href="https://facebook.com" aria-label="Facebook"><img src="/public/icons/facebook.svg"
+                    alt="Facebook"></a>
+        </div>
+
+        <div class="footer__flag">
+            <a href="/en/index.html" aria-label="English version"><img class="footer__flag1"
+                    src="/public/icons/drapeau_uk.webp" alt="English"></a>
+        </div>
+
+        <p class="text__footer">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard
+        </p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
