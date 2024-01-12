@@ -58,3 +58,12 @@
 
 
 
+.song__titre{
+    color:  var(--black-site, #000);
+    font-family: ;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+     text-decoration: none;
+
+}
