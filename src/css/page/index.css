@@ -65,6 +65,21 @@ line-height: 110%; /* 17.6px */
  margin-top: 4px;
 
 }
+
+
+.heading__5{
+padding-bottom: 5px; 
+color: #FFF;
+font-family: Baloo2, sans-serif;
+font-size: 16px;
+font-style: 16px;
+font-weight: 700;
+ margin-top: 200px;
+ margin-right:110px;
+
+}
+
+
 .heading__1 {
 color: #FFF;
 font-family: Baloo2, sans-serif;
@@ -124,7 +139,7 @@ color: #FFFFFF;
 
 
 .container__7 {
-    margin-top:200px;
+  
      display: flex;
   align-items: center; /* Alignement vertical des enfants */
   background-color: #000; /* Couleur de fond du conteneur */

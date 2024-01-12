@@ -1,5 +1,5 @@
 .card {
-    margin-top: 200px;
+    margin-top: 170px;
     position: relative;
     padding-top:0;
   }
@@ -31,7 +31,7 @@
   
   
   .card__title {
-    color: #FFF;
+    color: var(--black-site, #FFF);
     text-align: center;
      font-family: Baloo2, sans-serif;
     font-size: 20px;
@@ -41,7 +41,7 @@
   }
   
   .card__title-link {
-    color: ;
+    color: var(--black-site, #FFF);
     text-decoration: none;
     display: block;
 
